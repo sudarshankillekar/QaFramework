@@ -1,0 +1,315 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>SME_InterfaceTestQA</groupId>
+	<artifactId>SME_InterfaceTestQA</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<org.springframework-version>4.2.5.RELEASE</org.springframework-version> 
+	<aspectj.version>1.8.10</aspectj.version>
+  		</properties>
+	<dependencies>
+		
+		<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <version>2.4.2</version>
+<scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-testng</artifactId>
+    <version>7.11.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.7.0</version>
+    <scope>test</scope>
+</dependency>
+
+<!-- https://mavenlibs.com/maven/dependency/org.seleniumhq.selenium/selenium-http-jdk-client -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-http-jdk-client</artifactId>
+    <version>4.8.3</version>
+</dependency>
+<!-- https://mavenlibs.com/maven/dependency/org.seleniumhq.selenium.client-drivers/selenium-java-client-driver -->
+<dependency>
+    <groupId>org.seleniumhq.selenium.client-drivers</groupId>
+    <artifactId>selenium-java-client-driver</artifactId>
+    <version>1.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.eclipse.lsp4j/org.eclipse.lsp4j.jsonrpc -->
+<dependency>
+    <groupId>org.eclipse.lsp4j</groupId>
+    <artifactId>org.eclipse.lsp4j.jsonrpc</artifactId>
+    <version>0.20.0</version>
+</dependency>
+
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-java</artifactId>
+			<version>7.10.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-picocontainer</artifactId>
+    <version>7.10.1</version>
+    <scope>test</scope>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/gherkin -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>26.0.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-gherkin -->
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-gherkin</artifactId>
+    <version>7.11.1</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>5.0.9</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
+<dependency>
+    <groupId>com.vimalselvam</groupId>
+    <artifactId>cucumber-extentsreport</artifactId>
+    <version>3.1.1</version>
+</dependency>
+
+	
+	
+		<dependency>
+			<groupId>net.masterthought</groupId>
+			<artifactId>cucumber-reporting</artifactId>
+			<version>5.7.4</version>
+		</dependency>
+		<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi</artifactId>
+    <version>5.2.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+<dependency>
+    <groupId>org.apache.poi</groupId>
+    <artifactId>poi-ooxml</artifactId>
+    <version>5.2.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.apache.poi/POI-OOXML -->
+<dependency>
+	<groupId>org.apache.poi</groupId>
+	<artifactId>ooxml-schemas</artifactId>
+	<version>1.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.sf.saxon/Saxon-HE -->
+<dependency>
+    <groupId>net.sf.saxon</groupId>
+    <artifactId>Saxon-HE</artifactId>
+    <version>11.4</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.sf.saxon/saxon -->
+<dependency>
+    <groupId>net.sf.saxon</groupId>
+    <artifactId>saxon</artifactId>
+    <version>8.5.1</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.sf.saxon/saxon-xpath -->
+<dependency>
+    <groupId>net.sf.saxon</groupId>
+    <artifactId>saxon-xpath</artifactId>
+    <version>8.7</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/net.sf.saxon/saxon9 -->
+<!-- https://mavenlibs.com/maven/dependency/org.opengis.cite.saxon/saxon9 -->
+<dependency>
+    <groupId>org.opengis.cite.saxon</groupId>
+    <artifactId>saxon9</artifactId>
+    <version>9.0.0.8</version>
+</dependency>
+	<!-- https://mvnrepository.com/artifact/org.junit.platform/junit-platform-commons -->
+<dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-commons</artifactId>
+    <version>1.9.2</version>
+</dependency>
+
+
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>cucumber-junit</artifactId>
+    <version>1.2.5</version>
+    <scope>test</scope>
+</dependency>
+
+
+<dependency>
+   <groupId>net.sourceforge.saxon</groupId>
+   <artifactId>saxon</artifactId>
+   <version>9.1.0.8</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+<dependency>
+    <groupId>org.seleniumhq.selenium</groupId>
+    <artifactId>selenium-java</artifactId>
+    <version>4.8.3</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/junit/junit -->
+
+
+<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
+<dependency>
+    <groupId>info.cukes</groupId>
+    <artifactId>gherkin</artifactId>
+    <version>2.12.2</version>
+    <scope>provided</scope>
+</dependency>
+
+
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.13.3</version>
+</dependency>
+<dependency>
+  <groupId>org.projectlombok</groupId>
+  <artifactId>lombok</artifactId>
+  <version>1.18.20</version>
+</dependency>
+<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.11.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>4.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.github.temyers</groupId>
+			<artifactId>cucumber-jvm-parallel-plugin</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.directory.studio/org.apache.commons.io -->
+<dependency>
+    <groupId>org.apache.directory.studio</groupId>
+    <artifactId>org.apache.commons.io</artifactId>
+    <version>2.4</version>
+</dependency>
+
+	<dependency>
+    <groupId>io.qameta.allure</groupId>
+    <artifactId>allure-cucumber7-jvm</artifactId>
+    <version>2.17.2</version>
+</dependency>
+<dependency>
+    <groupId>io.cucumber</groupId>
+    <artifactId>cucumber-jvm</artifactId>
+    <version>6.8.1</version>
+    <type>pom</type>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.eclipse.m2e.logback/appender -->
+
+
+<dependency>
+    <groupId>ru.yandex.qatools.allure</groupId>
+    <artifactId>allure-cucumber-jvm-adaptor</artifactId>
+    <version>1.6.1</version>
+</dependency>
+ <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.9.1</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-resources-plugin -->
+<dependency>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-resources-plugin</artifactId>
+    <version>3.3.0</version>
+</dependency>
+<!-- https://mvnrepository.com/artifact/org.eclipse.m2e.logback/appender -->
+
+<dependency>
+  <groupId>org.apache.maven.plugins</groupId>
+  <artifactId>maven-compiler-plugin</artifactId>
+  <version>3.10.1</version>
+  <type>maven-plugin</type>
+</dependency>
+        <dependency>
+    <groupId>junit</groupId>
+    <artifactId>junit</artifactId>
+    <version>4.13.2</version>
+    <scope>test</scope>
+</dependency>
+ <dependency>
+        <groupId>org.junit.platform</groupId>
+        <artifactId>junit-platform-suite-engine</artifactId>
+        <version>1.9.1</version>
+        <scope>test</scope>
+    </dependency>
+<dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-surefire-provider</artifactId>
+            <version>1.1.0</version>
+        </dependency>
+<dependency>
+    <groupId>com.aventstack</groupId>
+    <artifactId>extentreports</artifactId>
+    <version>3.1.5</version>
+</dependency>	
+		<dependency>
+			<groupId>uk.co.actoJava</groupId>
+			<artifactId>SeleniumExample</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+      <plugins>
+           <plugin>
+              <groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-surefire-plugin</artifactId>
+	<version>3.0.0-M5</version>
+	<configuration>
+		<parallel>methods</parallel>
+		<useUnlimitedThreads>true</useUnlimitedThreads>
+		<suiteXmlFiles>
+                        <suiteXmlFile>testng.xml</suiteXmlFile>
+                    </suiteXmlFiles>
+	</configuration>
+           </plugin>
+           <plugin>
+	<groupId>org.apache.maven.plugins</groupId>
+	<artifactId>maven-failsafe-plugin</artifactId>
+	<version>2.22.0</version>
+	<executions>
+		<execution>
+			<goals>
+				<goal>integration-test</goal>
+				<goal>verify</goal>
+			</goals>
+			<configuration>
+				<parallel>methods</parallel>
+				<useUnlimitedThreads>true</useUnlimitedThreads>
+			</configuration>
+		</execution>
+	</executions>
+</plugin>
+               </plugins>
+   </build>
+</project>
